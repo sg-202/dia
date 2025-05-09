@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Día de nuestra de la Tierra</title>
+</head>
+<body>
+    <header>
+        <h1>Día Internacional de la Madre Tierra (22 de abril)</h1>
+        <nav>
+            <ul>
+                <li><a href="#seccion1">Sección 1</a></li>
+                <li><a href="#seccion2">Sección 2</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="seccion1">
+            <h2>Cuidar a nuestra Madre Tierra</h2>
+            <p>En el Día Internacional de la Madre Tierra necesitamos un cambio hacia una economía más sostenible que funcione tanto para las personas como para el planeta. Promovamos la armonía con la naturaleza y la tierra.</p>
+            <ol>
+                <li>Recuperar los ecosistemas de nuestro planeta.</li>
+                <li>Combatir el cambio climático.</li>
+                <li>Prevenir una extinción masiva.</li>
+                <li>¡Únete al movimiento mundial para restaurar la madre Tierra!</li>
+            </ol>
+            <img src="imagenes/Un-dia-para-la-Tierra-Nuestro-poder-nuestro-planeta-696x396.jpg" alt="Día de la Tierra" class="imagen-responsiva">
+            <p><a href="https://www.un.org/es/observances/earth-day">Naciones Unidas</a></p>
+        </section>
+
+        <section id="seccion2">
+            <h2>COP16 Colombia</h2>
+            <p>Creación del Fondo Cali, un mecanismo multilateral para recaudar recursos económicos provenientes del uso de la información genética digital de la biodiversidad para su posterior reparto justo y equitativo. Sectores que contribuirán al fondo: farmacéutico, biotecnológico y agrícola.</p>
+            <p>Establecimiento del nuevo órgano subsidiario para pueblos indígenas y comunidades locales que fortalece acciones y proyectos asociados a sus saberes tradicionales, innovaciones y prácticas. También se aprobó el programa de trabajo para estas comunidades al 2030.</p>
+
+            <h2>Historia del Día de la Tierra</h2>
+            <ul>
+                <li>El mentor del Día de la Tierra fue el senador estadounidense Gaylord Nelson.</li>
+                <li>La primera celebración impulsó la creación de la Agencia de Protección Ambiental (EPA).</li>
+                <li>En 1990, el Día de la Tierra se celebró a nivel mundial en 140 países.</li>
+            </ul>
+
+            <h2>Organizaciones Promotoras</h2>
+            <div class="tabla-responsive">
+                <table>
+                    <tr>
+                        <th>ONU</th>
+                        <th>PNUMA</th>
+                        <th>ONU Mujeres</th>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/pnuma.webp" alt="Logo PNUMA" class="imagen-responsiva"></td>
+                        <td><img src="imagenes/unnamed.jpg" alt="Logo ONU" class="imagen-responsiva"></td>
+                        <td><img src="imagenes/channels4_profile.jpg" alt="Logo ONU Mujeres" class="imagen-responsiva"></td>
+                    </tr>
+                </table>
+            </div>
+            <img src="imagenes/Captura de pantalla 2025-04-25 091531.png" alt="Captura COP16" class="imagen-responsiva">
+            <p><a href="https://www.cop16colombia.com/es/wp-content/uploads/2024/11/Inf_COP16_Logros_Historicos-2-1.pdf">COP 16 COLOMBIA</a></p>
+        </section>
+    </main>
+
+    <section>
+        <h2>Objetivos Ambientales</h2>
+        <div class="tabla-responsive">
+            <table>
+                <tr>
+                    <th>Objetivos ambientales</th>
+                    <th>Desarrollo sostenible</th>
+                    <th>Conservación política</th>
+                </tr>
+                <tr>
+                    <td>Concienciar sobre el impacto ambiental</td>
+                    <td>Promover la conservación y el desarrollo sostenible</td>
+                    <td>Exigir cambios en las políticas ambientales</td>
+                </tr>
+                <tr>
+                    <td>Revisar los logros ambientales</td>
+                    <td>Promover la educación ambiental</td>
+                    <td>Fomentar la participación ciudadana</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="doble-columna">
+        <h2>Conciencia Ambiental y Acción</h2>
+        <div class="contenedor-flex">
+          <div class="columna">
+            <h3>Conciencia Ambiental</h3>
+            <p>La educación ambiental es clave para entender cómo nuestras acciones impactan el planeta.</p>
+          </div>
+          <div class="columna">
+            <h3>Acción Ciudadana</h3>
+            <p>Plantar árboles, reducir residuos, y participar en campañas ecológicas ayuda al medio ambiente.</p>
+          </div>
+        </div>
+      </section>
+      <section id="contacto">
+        <h2>Formulario de Contacto</h2>
+        <form action="/enviar" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Contacto: info@ejemplo.com</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+}
+table {
+    width: 100%; /* Hace que la tabla ocupe todo el ancho de la página */
+    margin: 20px 0; /* Márgenes de la tabla */
+    border-collapse: collapse; /* Elimina espacios entre bordes */
+}
+
+th, td {
+    padding: 10px; /* Relleno dentro de las celdas */
+    text-align: left; /* Alinear el texto a la izquierda */
+    border: 3px solid rgb(204, 200, 200); /* Bordes de las celdas */
+}
+
+th {
+    background-color: rgb(189, 250, 165); /* Fondo para el encabezado */
+    color: rgb(194, 46, 46); /* Color del texto del encabezado */
+}
+
+tr:hover {
+    background-color: rgb(142, 223, 248); /* Cambia el fondo de las celdas al pasar el mouse */
+}
+
+body {
+    text-align: center; /* Centra el texto de todo el cuerpo */
+}
+
+ol, ul {
+    text-align: center;
+    list-style-position: inside; /* Asegura que las viñetas estén dentro del área centrada */
+}
+
+mark {
+    background-color: lightgreen; /* Fondo del resaltado */
+    color: rgb(179, 153, 66); /* Color del texto resaltado */
+}
+h2{
+    color: rgb(130, 3, 203); /* Color del texto del encabezado */
+}
+
+  h1 {
+    font-size: 36px;/*Maquina de escribir*/
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; /* Oculta el texto */
+    animation: escribir 10s steps(30, end) infinite;
+  }
+  
+  @keyframes escribir {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  h2 {
+    font-size: 25px;/*Tipo zoom*/
+    animation: zoom 2s infinite;
+  }
+  
+  @keyframes zoom {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  img,
+  .imagen-responsiva {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 20%;
+    animation: mover-horizontal 2s infinite alternate;/*Movimiento a la imagen*/
+  }
+  
+  @keyframes mover-horizontal {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }
+
+
+.tabla-responsive {
+   overflow-x: auto;
+    width: 100%;
+}
+.contenedor-flex {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Permite que se acomode si el espacio es pequeño */
+}
+
+.columna {
+  flex: 1 1 45%; /* Ocupa casi la mitad del contenedor y se ajusta si es necesario */
+  background-color: #f0f0f0;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Responsividad: en pantallas pequeñas, las columnas se apilan */
+@media (max-width: 768px) {
+  .contenedor-flex {
+    flex-direction: column;
+  }
+
+  .columna {
+    flex: 1 1 100%;
+  }
+}
